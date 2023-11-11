@@ -1,0 +1,171 @@
+@import '../variables/index.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  //Text
+  --text-color: rgba(255, 255, 255, 1);
+  //Stroke
+  --stroke-color: rgba(255, 255, 255, 0.50);
+  //Surface
+  --surface-color: rgba(255, 255, 255, 0.10);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  //Highlight
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  //Background
+  --bg-url: url(../src/image/bg-mobile.jpg);
+  //Button switch
+  --switch-bg-url: url(../src/image/moon-stars.svg);
+}
+
+.light {
+  //Text light
+  --text-color: rgba(0, 0, 0, 1);
+  //Stroke
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  //Surface
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  //Highlight
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  //Background
+  --bg-url: url(../src/image/bg-mobile-light.jpg);
+  //Button switch
+  --switch-bg-url: url(../src/image/sun.svg);
+}
+
+body {
+  /* background-image: url(../assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; */
+
+  /* Shorthand Background */
+  background: var(--bg-url) no-repeat top center/cover;
+}
+
+body * {
+  @include typhography(medium, 500, var(--text-color));
+}
+
+/* Container Mobile */
+#container {
+  width: 360px;
+  margin: 56px auto 0px;
+}
+
+
+/* Profile */
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+}
+
+#profile p {
+  padding-top: 8px;
+}
+
+
+
+/* Switch */
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+#switch button {
+  width: 32px;
+  height: 32px;
+  color: var(--text-color);
+  border: none;
+  border-radius: 50%;
+  background: #fff var(--switch-bg-url) no-repeat center;
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* Links */
+ul {
+  list-style: none;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+ul li a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  backdrop-filter: blur (4px); //Embaçado
+  -webkit-backdrop-filter: blur(4px);
+  transition: background-color 0.8s;
+}
+
+ul li a:hover {
+  background-color: var(--surface-color-hover);
+  border: 1.5px solid var(--stroke-color);
+}
+
+
+/* Social links*/
+#social-links {
+  padding: 24px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: background 0.5s;
+  border-radius: 50%;
+}
+
+#social-links a:hover {
+  background: var(--highlight-color);
+}
+
+#social-links ion-icon {
+  font-size: 24px;
+}
+
+/* Footer */
+footer {
+  padding: 24px 0;
+  text-align: center;
+  @include typhography (normal, 400, var(--text-color));
+}

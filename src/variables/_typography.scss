@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+@mixin typhography($size, $weight, $color) {
+  color: $color;
+  font-weight: $weight;
+  font-family: Inter, sans-serif;
+
+  @if $size ==medium {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  @else if $size ==normal {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+    @else if $size == big {
+      font-size: 24px;
+      line-height: 150%;
+    }
+
+}

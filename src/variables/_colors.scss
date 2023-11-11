@@ -1,0 +1,29 @@
+// -----------------Dark Mode-----------------------//
+
+//Text
+$text-color-dark-mode: rgba(255, 255, 255, 1);
+
+//Stroke
+$stroke-color-dark-mode: rgba(255, 255, 255, 0.50);
+
+//Surface
+$surface-color-dark-mode: rgba(255, 255, 255, 0.10);
+$surface-color-dark-mode-hover:rgba(255, 255, 255, 0.05);
+
+//Highlight
+$highlight-color-dark-mode: rgba(255, 255, 255, 0.2);
+
+// -----------------Light Mode-----------------------//
+
+//Text light
+$text-color-light-mode: rgba(0, 0, 0, 1);
+
+//Stroke
+$stroke-color-light-mode: rgba(0, 0, 0, 0.5);
+
+//Surface
+$surface-color-light-mode: rgba(0, 0, 0, 0.05);
+$surface-color-light-mode-hover: rgba(0, 0, 0, 0.02);
+
+//Highlight
+$highlight-color-light-mode: rgba(0, 0, 0, 0.1);
