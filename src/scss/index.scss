@@ -46,6 +46,7 @@ body {
 
   /* Shorthand Background */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -87,6 +88,7 @@ body * {
   right: 0;
   left: initial;
 }
+
 #switch button {
   width: 32px;
   height: 32px;
@@ -169,4 +171,18 @@ footer {
   padding: 24px 0;
   text-align: center;
   @include typhography (normal, 400, var(--text-color));
+}
+
+/* Media Queries */
+@media(min-width: 700px) {
+  :root {
+    //Background
+    --bg-url: url(../src/image/bg-desktop.jpg);
+  }
+
+  .light {
+    //Background
+    --bg-url: url(../src/image/bg-desktop-light.jpg);
+  }
+
 }
