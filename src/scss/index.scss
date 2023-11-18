@@ -53,7 +53,7 @@ body * {
   @include typhography(medium, 500, var(--text-color));
 }
 
-/* Container Mobile */
+/* Container Index Mobile */
 #container {
   width: 100%;
   max-width: 588px;
@@ -211,3 +211,5 @@ footer {
     left: 0;
   }
 }
+
+/* Page Sobre */
