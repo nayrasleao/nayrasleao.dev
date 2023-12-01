@@ -1,15 +1,11 @@
 @import '../variables/index.scss';
 
-header,
-main,
-footer {
-  margin: 0 27px;
-  // border: 1px solid blue;
-}
 
-#header-about{
+/* Header */
+#header-about {
+  width: 75%;
   display: flex;
-  margin: 19px;
+  margin: 19px auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -17,18 +13,136 @@ footer {
 #logo {
   width: 40px;
   height: 40px;
-  // border: 1px solid red;
 }
 
 
-ion-icon {
-  // border: 1px solid red;
+#header-about nav {
+  display: none;
+  /* Exibe a lista quando a classe active está presente */
+}
+
+#header-about nav.active {
+  display: flex;
+  /* Exibe a lista quando a classe active está presente */
+}
+
+#header-about ul {
+  background-image: url('../src/image/bg-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  backdrop-filter: blur (4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: background-color 0.8s;
+  list-style: none;
+  padding: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+#nav a {
+  text-decoration: none;
+}
+
+#nav li {
+  margin-top: 15px;
+}
+
+.nav {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+}
+
+.nav-toggle {
   width: 40px;
   height: 40px;
-  justify-content: center;
-  align-items: center;
+  cursor: pointer;
 }
 
-#container-about {
-  background: linear-gradient(180deg, rgba(18, 18, 18, 0.80) 0%, rgba(18, 18, 18, 0.00) 100%);
+/* Viewport */
+#container-viewport {
+  margin: 42px auto;
+  width: 75%;
+
+}
+
+.text-about h2 {
+  text-transform: uppercase;
+  @include typhography(medium, 600, $text-color-dark-mode)
+}
+
+.text-about h1 {
+  text-transform: uppercase;
+  @include typhography(big, 600, $text-color-dark-mode-seconedary);
+  margin: 8px 0;
+}
+
+.button-about {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-container {
+  width: 144px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.button-about a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.button-about ion-icon {
+  width: 21px;
+  height: 22px;
+}
+
+a.linkedin-about {
+  border-image: linear-gradient(to right, #9358F7, #10D7E2);
+  border-image: -webkit-linear-gradient(to right, #9358F7, #10D7E2);
+  background: none;
+    border-image-slice: 1;
+    border-style: solid;
+}
+
+a.linkedin-about:active {
+  background: $surface-color-dark-mode;
+}
+
+a.github-about {
+  border-image: linear-gradient(to right, #D24074,#6518B4);
+  border-image: -webkit-linear-gradient(to right, #D24074, #6518B4);
+  background: none;
+  border-image-slice: 1;
+  border-style: solid;
+}
+
+a.github-about:active {
+  background: $surface-color-dark-mode;
+}
+
+/* Media Queries */
+@media(min-width: 750px) {
+
+  .nav-toggle {
+    cursor: pointer;
+    display: none;
+    /* Esconde o ícone de hambúrguer em telas maiores */
+  }
+
+
 }
