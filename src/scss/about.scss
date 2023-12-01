@@ -1,6 +1,8 @@
 @import '../variables/index.scss';
 
-
+#about{
+  height: auto;
+}
 /* Header */
 #header-about {
   width: 75%;
@@ -65,24 +67,24 @@
 }
 
 /* Viewport */
-#container-viewport {
-  margin: 42px auto;
+.container-about {
+  margin: 42px auto 52px auto;
   width: 75%;
 
 }
 
-.text-about h2 {
+.container-about h2 {
   text-transform: uppercase;
   @include typhography(medium, 600, $text-color-dark-mode)
 }
 
-.text-about h1 {
+.container-about h1 {
   text-transform: uppercase;
-  @include typhography(big, 600, $text-color-dark-mode-seconedary);
+  @include typhography(extrabig, 600, $text-color-dark-mode-seconedary);
   margin: 8px 0;
 }
 
-.button-about {
+.social-btn {
   margin-top: 64px;
   display: flex;
   justify-content: space-between;
@@ -95,7 +97,7 @@
   border-radius: 4px;
 }
 
-.button-about a {
+.social-btn a {
   text-decoration: none;
   width: 100%;
   height: 100%;
@@ -106,12 +108,12 @@
 
 }
 
-.button-about ion-icon {
+.social-btn ion-icon {
   width: 21px;
   height: 22px;
 }
 
-a.linkedin-about {
+a.blue-btn {
   border-image: linear-gradient(to right, #9358F7, #10D7E2);
   border-image: -webkit-linear-gradient(to right, #9358F7, #10D7E2);
   background: none;
@@ -119,11 +121,11 @@ a.linkedin-about {
     border-style: solid;
 }
 
-a.linkedin-about:active {
+a.blue-bnt:active {
   background: $surface-color-dark-mode;
 }
 
-a.github-about {
+a.pink-btn {
   border-image: linear-gradient(to right, #D24074,#6518B4);
   border-image: -webkit-linear-gradient(to right, #D24074, #6518B4);
   background: none;
@@ -131,8 +133,25 @@ a.github-about {
   border-style: solid;
 }
 
-a.github-about:active {
+a.pink-btn:active {
   background: $surface-color-dark-mode;
+}
+
+.dark-bg{
+  background: linear-gradient(to right, #151515,#15151500);
+  background: -webkit-linear-gradient(to right, #151515,#15151500);
+  // height: 400px;
+}
+
+.container-text h2{
+  @include typhography(big, 600, $text-color-dark-mode);
+  padding-top: 42px;
+  padding-bottom: 50px;
+}
+
+.container-text p {
+  @include typhography(normal, 300, $text-color-dark-mode);
+  padding-top: 8px;
 }
 
 /* Media Queries */
