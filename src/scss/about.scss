@@ -4,7 +4,6 @@ header,
 main,
 footer {
   margin: 0 27px;
-  // border: 1px solid blue;
 }
 
 /* Header */
@@ -18,7 +17,6 @@ footer {
 #logo {
   width: 40px;
   height: 40px;
-  // border: 1px solid red;
 }
 
 
@@ -34,9 +32,9 @@ footer {
 
 #header-about ul {
   background: var(--surface-color);
-  // backdrop-filter: blur (4px);
-  // -webkit-backdrop-filter: blur(4px);
-  // transition: background-color 0.8s;
+  backdrop-filter: blur (4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: background-color 0.8s;
   list-style: none;
   padding: 15px;
   flex-direction: column;
@@ -62,20 +60,10 @@ footer {
 }
 
 .nav-toggle {
-  // display: block;
   width: 40px;
   height: 40px;
   cursor: pointer;
 }
-
-// .nav.active .nav-toggle {
-//   color: red;
-// }
-
-// .nav.active {
-//   display: flex;
-//   /* Exibe a lista de navegação quando o ícone é clicado */
-// }
 
 /* Viewport */
 #container-about {
@@ -86,7 +74,7 @@ footer {
 @media(min-width: 850px) {
 
   .nav-toggle {
-    // cursor: pointer;
+    cursor: pointer;
     display: none;
     /* Esconde o ícone de hambúrguer em telas maiores */
   }
