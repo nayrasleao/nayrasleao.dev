@@ -118,7 +118,7 @@ body * {
 }
 
 /* Links */
-ul {
+#container ul {
   list-style: none;
   padding: 24px;
   display: flex;
@@ -126,7 +126,7 @@ ul {
   gap: 16px;
 }
 
-ul li a {
+#container ul li a {
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -140,7 +140,7 @@ ul li a {
   transition: background-color 0.8s;
 }
 
-ul li a:hover {
+#container ul li a:hover {
   background-color: var(--surface-color-hover);
   border: 1.5px solid var(--stroke-color);
 }
