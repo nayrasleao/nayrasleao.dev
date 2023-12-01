@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
 - JavaScript
-- -Gulp
+- Gulp
 - Git e Github
 - Figma
 
