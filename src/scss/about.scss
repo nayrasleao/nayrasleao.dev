@@ -7,7 +7,8 @@ footer {
   // border: 1px solid blue;
 }
 
-#header-about{
+/* Header */
+#header-about {
   display: flex;
   margin: 19px;
   justify-content: space-between;
@@ -21,14 +22,74 @@ footer {
 }
 
 
-ion-icon {
-  // border: 1px solid red;
-  width: 40px;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
+#header-about nav {
+  display: none;
+  /* Exibe a lista quando a classe active está presente */
 }
 
+#header-about nav.active {
+  display: flex;
+  /* Exibe a lista quando a classe active está presente */
+}
+
+#header-about ul {
+  background: var(--surface-color);
+  // backdrop-filter: blur (4px);
+  // -webkit-backdrop-filter: blur(4px);
+  // transition: background-color 0.8s;
+  list-style: none;
+  padding: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+#nav a{
+  text-decoration: none;  
+}
+
+#nav li {
+  margin-top: 15px;
+}
+
+.nav {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+}
+
+.nav-toggle {
+  // display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+// .nav.active .nav-toggle {
+//   color: red;
+// }
+
+// .nav.active {
+//   display: flex;
+//   /* Exibe a lista de navegação quando o ícone é clicado */
+// }
+
+/* Viewport */
 #container-about {
   background: linear-gradient(180deg, rgba(18, 18, 18, 0.80) 0%, rgba(18, 18, 18, 0.00) 100%);
+}
+
+/* Media Queries */
+@media(min-width: 850px) {
+
+  .nav-toggle {
+    // cursor: pointer;
+    display: none;
+    /* Esconde o ícone de hambúrguer em telas maiores */
+  }
+
+
 }
