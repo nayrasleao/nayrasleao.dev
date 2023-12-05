@@ -25,4 +25,9 @@
     line-height: 150%;
   }
 
+  @else if $size ==navigation {
+    font-size: 18px;
+    line-height: 150%;
+  }
+
 }

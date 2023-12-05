@@ -154,7 +154,7 @@ a.pink-btn:active {
   padding-top: 8px;
 }
 
-/* Media Queries */
+/* Media Queries - Desktop*/
 @media(min-width: 750px) {
 
   .nav-toggle {
@@ -162,6 +162,8 @@ a.pink-btn:active {
     display: none;
     /* Esconde o ícone de hambúrguer em telas maiores */
   }
+
+  
 
 
 }
