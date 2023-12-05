@@ -13,6 +13,7 @@
 }
 
 #logo {
+  background-image: url('../src/image/logo-desktop.svg');
   width: 40px;
   height: 40px;
 }
@@ -154,7 +155,7 @@ a.pink-btn:active {
   padding-top: 8px;
 }
 
-/* Media Queries */
+/* Media Queries - Desktop*/
 @media(min-width: 750px) {
 
   .nav-toggle {
@@ -162,6 +163,38 @@ a.pink-btn:active {
     display: none;
     /* Esconde o ícone de hambúrguer em telas maiores */
   }
+
+  #logo {
+    background-image: url('../src/image/logo-mobile.svg');
+    width: 151px;
+    height: 151px;
+     margin-top: -24px;
+  }
+  
+  #header-about nav {
+    display: flex;      
+    margin-top: -30px;
+    
+  }
+  
+  #header-about ul {
+    background-image: none;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+  
+  }
+  
+  #header-about ul li{
+    padding: 0 20px;
+    font-family
+  }
+ 
+
+#nav li {
+  margin-top: 0;
+}
 
 
 }
