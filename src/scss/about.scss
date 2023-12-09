@@ -13,7 +13,7 @@
 }
 
 #logo {
-  background-image: url('../src/image/logo-desktop.svg');
+  background-image: url('../src/image/logo-mobile.svg');
   width: 40px;
   height: 40px;
 }
@@ -165,7 +165,7 @@ a.pink-btn:active {
   }
 
   #logo {
-    background-image: url('../src/image/logo-mobile.svg');
+    background-image: url('../src/image/logo-desktop.svg');
     width: 151px;
     height: 151px;
      margin-top: -24px;
@@ -188,7 +188,7 @@ a.pink-btn:active {
   
   #header-about ul li{
     padding: 0 20px;
-    font-family
+    @include typhography(extrabig, normal, $text-color-dark-mode);
   }
  
 
