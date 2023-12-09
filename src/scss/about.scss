@@ -48,10 +48,12 @@
 
 #nav a {
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 #nav li {
   margin-top: 15px;
+  
 }
 
 .nav {
@@ -87,7 +89,7 @@
 }
 
 .social-btn {
-  margin-top: 64px;
+  margin-top: 30px;
   display: flex;
   gap: 24px;
 }
@@ -97,6 +99,19 @@
   height: 40px;
   overflow: hidden;
   border-radius: 4px;
+}
+
+.tecnologies{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+}
+
+.tecnologies ion-icon{
+  @include typhography(big, normal, $text-color-dark-mode-seconedary);
 }
 
 .social-btn a {
@@ -140,14 +155,14 @@ a.pink-btn:active {
 }
 
 .dark-bg{
-  background: linear-gradient(to right, #151515,#15151500);
-  background: -webkit-linear-gradient(to right, #151515,#15151500);
-  // height: 400px;
+  background: $stroke-color-light-mode;
+  padding: 42px 0 42px 0;
+  // background: linear-gradient(to right, #151515,#15151500);
+  // background: -webkit-linear-gradient(to right, #151515,#15151500);
 }
 
 .container-text h2{
   @include typhography(big, 600, $text-color-dark-mode);
-  padding-top: 42px;
   padding-bottom: 50px;
 }
 
@@ -230,6 +245,40 @@ margin: 0 0 5% 10%;
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.dark-bg  {
+  display: flex !important;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  }
+
+#image-perfil{
+  width: 367px;
+  height: 367px;
+  margin:0 12% 0 10%;
+  background-image: url(../src/image/perfil-about.png);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container-text h3{
+  font-size: 20px;
+}
+
+.container-text p{
+  font-size: 18px;
+}
+
+.tecnologies{
+justify-content: left;
+  // align-items: center;
+
+}
+
+.tecnologies ion-icon{
+  font-size: 32px;
 }
 
 
