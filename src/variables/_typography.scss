@@ -5,29 +5,37 @@
   font-weight: $weight;
   font-family: Inter, sans-serif;
 
-  @if $size ==medium {
-    font-size: 16px;
-    line-height: 150%;
-  }
-
-  @else if $size ==normal {
+  @if $size == normal {
     font-size: 14px;
     line-height: 150%;
   }
 
-  @else if $size ==big {
+
+  @else if $size == medium {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  @else if $size == navigation {
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  @else if $size == big {
     font-size: 24px;
     line-height: 150%;
   }
 
-  @else if $size ==extrabig {
+  @else if $size == extrabig {
     font-size: 32px;
     line-height: 150%;
   }
 
-  @else if $size ==navigation {
-    font-size: 18px;
+  @else if $size == extralarge {
+    font-size: 64px;
     line-height: 150%;
   }
+
+
 
 }

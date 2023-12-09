@@ -16,6 +16,7 @@
   background-image: url('../src/image/logo-mobile.svg');
   width: 40px;
   height: 40px;
+  transition: transform 0.01s linear; 
 }
 
 
@@ -88,7 +89,7 @@
 .social-btn {
   margin-top: 64px;
   display: flex;
-  justify-content: space-between;
+  gap: 24px;
 }
 
 .button-container {
@@ -187,13 +188,48 @@ a.pink-btn:active {
   }
   
   #header-about ul li{
-    padding: 0 20px;
+    padding: 0 30px;
+    margin-right: 2%;
     @include typhography(extrabig, normal, $text-color-dark-mode);
   }
  
 
 #nav li {
   margin-top: 0;
+}
+
+/* Viewport */
+
+#viewport-about{
+display: flex;
+height: 80vh;
+margin: 0 0 5% 10%;
+}
+
+.container-about {
+  width: 40%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.container-about h2 {
+  @include typhography(big, 600, $text-color-dark-mode);
+}
+
+.container-about h1 {
+  @include typhography(extralarge, 600, $text-color-dark-mode-seconedary);
+  margin: 8px 0;
+}
+
+#image-vh{
+  width: 60%;
+  background-image: url(../src/image/loop-about.svg);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
