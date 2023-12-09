@@ -36,7 +36,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Portfólio inicia com um agregador de links que leva o usuário para conteúdos especificos sobre mim.
 
-- [Acesse o projeto que está em construção, online]( )
+- [Acesse o projeto que está em construção](https://nayrasleao.vercel.app/)
 
 
 ## 🔖 Layout
